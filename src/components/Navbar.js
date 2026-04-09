@@ -44,9 +44,6 @@ function Navbar(){
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/tasks' className='nav-links' onClick={closeMobileMenu}>Tasks</Link>
-                    </li>
-                    <li className='nav-item'>
                         <Link to='/dashboard' className='nav-links' onClick={closeMobileMenu}>DashBoard</Link>
                     </li>
                 </ul>

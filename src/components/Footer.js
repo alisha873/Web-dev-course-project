@@ -19,7 +19,6 @@ class Footer extends Component {
         <div className='home-footer__links'>
           <a href='/'>Home</a>
           <a href='/focus'>Focus</a>
-          <a href='/tasks'>Tasks</a>
           <a href='/dashboard'>Dashboard</a>
         </div>
       </footer>

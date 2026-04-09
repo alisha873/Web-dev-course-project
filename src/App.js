@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/navbar';
 import Home from './pages/Home';
 import FocusPage from './components/FocusPage/FocusPage';
-import TasksPage from './components/TasksPage/TasksPage';
 import Dashboard from './components/Dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; //enables routing - navigation without reload 
 
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/focus" element={<FocusPage />} />
-        <Route path="/tasks" element={<TasksPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>

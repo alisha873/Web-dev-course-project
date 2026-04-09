@@ -4,14 +4,13 @@ function Streak({ streak }) {
   const messages = [
     'Keep going!',
     'You\'re building momentum!',
-    'On fire! Don\'t stop now 🔥',
+    'On fire! Don\'t stop now',
     'Incredible consistency!',
   ];
   const msg = messages[Math.min(streak - 1, messages.length - 1)] || 'Start your streak today!';
 
   return (
     <div className='streak-card'>
-      <span className='streak-icon'>🔥</span>
       <div>
         <p className='streak-count'>{streak} day streak</p>
         <p className='streak-msg'>{msg}</p>
