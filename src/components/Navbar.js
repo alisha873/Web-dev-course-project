@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; //use state manages state and useEffect manages side effects 
 import {Link} from 'react-router-dom'; //links avoids page reload 
 import { FaBars, FaTimes } from "react-icons/fa"; //fabars is menu bar and fatimes is close icon
-import './navbar.css';
+import './Navbar.css';
 import SignupModal from './SignupModal'; //importing a child component 
 
 //use state lets a functional component store and update data 

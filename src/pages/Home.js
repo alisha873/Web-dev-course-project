@@ -14,6 +14,4 @@ function Home() {
   );
 }
 
-//used anchor tag here could have used links also 
-
 export default Home;

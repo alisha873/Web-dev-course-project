@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import FocusPage from './components/FocusPage/FocusPage';
 import Dashboard from './components/Dashboard/Dashboard';
