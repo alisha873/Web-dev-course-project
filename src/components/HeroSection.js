@@ -24,4 +24,5 @@ function HeroSection() {
   );
 }
 
+//created a reusable Button component and used props to control its style, size, and navigation behavior.
 export default HeroSection;

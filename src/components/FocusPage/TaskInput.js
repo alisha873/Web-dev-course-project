@@ -31,3 +31,5 @@ function TaskInput({ task, setTask }) {
 }
 
 export default TaskInput;
+
+//update value with every change and if pressed key is enter run function 

@@ -12,7 +12,7 @@ function Cards() {
           <ul className='cards__items'>
 
             <CardItem
-              src='images/img1.png' // you can change later
+              src='images/img1.png' 
               text='Start focused study sessions using Pomodoro technique'
               label='Focus'
               path='/focus'

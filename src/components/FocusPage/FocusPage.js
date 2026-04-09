@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useCallback } from 'react'; //usecallback reuses alr rendered things again if dependencies don't change 
+import { useNavigate } from 'react-router-dom'; //navigate hook
 import SessionTabs from './SessionTabs';
 import Timer from './Timer';
 import Controls from './Controls';
 import TaskInput from './TaskInput';
 import './FocusPage.css';
 
+//different timer modes 
 const SESSIONS = {
   focus: { label: 'Focus', duration: 25 * 60, color: '#e8856a' },
   short: { label: 'Short Break', duration: 5 * 60, color: '#6a9ee8' },
@@ -21,6 +22,7 @@ function FocusPage() {
 
   const session = SESSIONS[sessionType];
 
+  //timer logic 
   useEffect(() => {
     if (!isRunning) return;
     const interval = setInterval(() => {
@@ -34,7 +36,7 @@ function FocusPage() {
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning]); //timer decreases every second that it is running 
 
   const handleSessionChange = useCallback((type) => {
     setSessionType(type);

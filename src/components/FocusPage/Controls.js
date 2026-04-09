@@ -20,3 +20,5 @@ function Controls({ isRunning, onStart, onPause, onReset, color }) {
 }
 
 export default Controls;
+
+//if runnnign show pause button or else show start button 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types'; //this is props validation, used to validate the type of props passed to a component
+import ReactDOM from 'react-dom'; //used for portal rendering 
 import './SignupModal.css';
 
 function SignupModal({ isOpen, onClose }) {
@@ -10,8 +10,9 @@ function SignupModal({ isOpen, onClose }) {
     return null;
   }
 
+  //function runs of submit 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //prevents page reload 
     if (!email.trim()) {
       return;
     }
@@ -20,8 +21,9 @@ function SignupModal({ isOpen, onClose }) {
     onClose();
   };
 
+  //renders modal outside normal dom tree that is why it is a pop up 
   return ReactDOM.createPortal(
-    <div className='signup-modal-overlay' onClick={onClose}>
+    <div className='signup-modal-overlay' onClick={onClose}> 
       <div className='signup-modal' onClick={(e) => e.stopPropagation()}>
         <button className='signup-modal-close' onClick={onClose} aria-label='Close signup form'>
           ×
@@ -47,7 +49,7 @@ function SignupModal({ isOpen, onClose }) {
 }
 
 SignupModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
+  isOpen: PropTypes.bool.isRequired, //isopen should be boolean and must be passed 
   onClose: PropTypes.func.isRequired,
 };
 

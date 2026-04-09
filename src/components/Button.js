@@ -3,9 +3,11 @@ import './Button.css';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+//only these two styles and sizes are allowed 
 const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
+//props destrctureed 
 export const Button = ({
   children,
   type,
@@ -46,6 +48,7 @@ Button.propTypes = {
   to: PropTypes.string.isRequired
 };
 
+//if user doesn't pass use 
 Button.defaultProps = {
   type: 'button',
   buttonStyle: 'btn--primary',
